@@ -1,0 +1,17 @@
+@use "../../assets/sass/variables" as *;
+
+.employee__info{
+  display: grid;
+  // grid-template-columns: repeat(2, 150px);
+  // grid-template-rows: repeat(5, 150px);
+  justify-content: center;
+  align-items: center;
+  border: 3px solid $color-secondary;
+  border-radius: 1rem;
+  background-color: $font-color;
+  margin: 1rem;
+  padding: 1rem;
+  h3{
+    color: $color-primary;
+  }
+}

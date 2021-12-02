@@ -1,0 +1,18 @@
+@use "../../assets/sass/variables" as *;
+
+.counter-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .counter{
+    margin: 10px;
+    color: $color-secondary;
+    justify-content: center;
+    padding-left: 20px;
+  }
+  .result{
+    display: flex;
+    justify-content: center;
+    
+  }
+}

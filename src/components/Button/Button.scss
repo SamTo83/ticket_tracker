@@ -1,0 +1,21 @@
+@use "../../assets/sass/variables" as *;
+
+.button {
+  min-width: 30px;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 1rem;
+  border: none;
+  color: $color-white;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  &.button--primary{  
+    background-color: $color-primary;
+  }
+  
+  &.button--secondary{  
+    background-color: $color-secondary;
+  }
+}
