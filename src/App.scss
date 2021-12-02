@@ -9,26 +9,11 @@
   margin-bottom: 3rem;
 }
 
-.grid-container{
-  
-  .function{
-    display: flex;
-    justify-content: center;
-  }
-  .button-container{
-    display: flex;
-    justify-content: center;
-  }
-}
-
 .profileCard{
   display: grid;
-  grid-template-columns: repeat (2, 300px);
-  grid-template-rows: repeat (5, 300px);
   justify-content: center;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
+  grid-template-columns: repeat(5, 450px);
+  grid-template-rows: repeat(2, 450px);
   gap: 20px;
   
 }

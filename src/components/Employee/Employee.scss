@@ -2,8 +2,6 @@
 
 .employee__info{
   display: grid;
-  // grid-template-columns: repeat(2, 150px);
-  // grid-template-rows: repeat(5, 150px);
   justify-content: center;
   align-items: center;
   border: 3px solid $color-secondary;
@@ -13,5 +11,14 @@
   padding: 1rem;
   h3{
     color: $color-primary;
+    font-size: 1.5rem;
+  }
+  .function{
+    display: flex;
+    justify-content: center;
+  }
+  .button-container{
+    display: flex;
+    justify-content: center;
   }
 }
