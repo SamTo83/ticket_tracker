@@ -1,19 +1,25 @@
-
 @use "./assets/sass/variables" as *;
 
-.header {
-  background-color: $color-black;
-  display: flex;
-  justify-content: center;
-  color: $color-white;
-  margin-bottom: 3rem;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.profileCard{
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(5, 350px);
-  grid-template-rows: repeat(2, 350px);
-  gap: 20px;
-  
+@media (min-width: 375px) {
+  .profileCard{
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(10, 300px);
+    gap: 10px;
+  }
+}
+
+@media (min-width: 768px){
+  .profileCard{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 350px);
+    grid-template-rows: repeat(2, 350px);
+    gap: 20px;
+  }
 }

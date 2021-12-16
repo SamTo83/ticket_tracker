@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Ticket Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[You can check out my game by clicking on this link](https://samto83.github.io/ticket_tracker/)
 
-## Available Scripts
+![Ticket_Tracker l](https://github.com/SamTo83/Blackjack-game/blob/main/main.PNG)
 
-In the project directory, you can run:
+## About
+This is a simple Ticket Tracker I created with React and Sass. The Ticket Tracker allows the user to be able to increment and decrement the values of the counter. This project allows me to practice props, useState and components structure.
 
-### `yarn start`
+## The design  
+### The tracker consist of: 
+* A single page with layout of 10 employee's names and roles.
+* All information cards name, role, counter and two buttons. 
+* The plus and minus buttons can increase or decrease the number 0
+* The code prevents it from going below 0.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## The code 
+1. The useState method allows me to handle the manipulation of the counter.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+ ```const Counter = () => {
+  const [counter, setCounter] = useState(0);
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  const handleIncrement = () => {
+    setCounter(counter + 1);
+  };
+  const handleDecrement = () => {
+    if (counter > 0) {
+      setCounter(counter - 1);
+    }
+  };
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  return (
+    <div className="counter__container">
+      <h4 className="counter__name">Counter</h4>
+      <span className="counter__result">{counter}</span>
+      <div className="button__container">
+        <div onClick={handleDecrement}>
+          <Button className="Btn" buttonText="-" isSecondary={true} />
+        </div>
+        <div onClick={handleIncrement}>
+          <Button className="Btn" buttonText="+" isSecondary={false} />
+        </div>
+      </div>
+    </div>
+  );
+};
+```

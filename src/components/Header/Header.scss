@@ -1,7 +1,12 @@
 @use "../../assets/sass/variables" as *;
 
 .header{
-
+  background-color: $color-black;
+  display: flex;
+  justify-content: center;
+  color: $color-white;
+  padding: 1rem;
+  margin-bottom: 3rem;
   .title{
     color: $color-white;  
     font-size: 3rem;

@@ -13,11 +13,7 @@
     color: $color-primary;
     font-size: 1rem;
   }
-  .function{
-    display: flex;
-    justify-content: center;
-  }
-  .button-container{
+  &__counter-wrapper{
     display: flex;
     justify-content: center;
   }
