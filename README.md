@@ -2,7 +2,7 @@
 
 [You can check out my game by clicking on this link](https://samto83.github.io/ticket_tracker/)
 
-![Ticket_Tracker l](https://github.com/SamTo83/Blackjack-game/blob/main/main.PNG)
+![Ticket_Tracker l](https://github.com/SamTo83/ticket_tracker/blob/master/src/assets/ticket-tracker.PNG)
 
 ## About
 This is a simple Ticket Tracker I created with React and Sass. The Ticket Tracker allows the user to be able to increment and decrement the values of the counter. This project allows me to practice props, useState and components structure.
