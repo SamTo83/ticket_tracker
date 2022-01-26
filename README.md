@@ -1,6 +1,6 @@
 # Ticket Tracker
 
-[You can check out my game by clicking on this link](https://samto83.github.io/ticket_tracker/)
+[You can check out my app by clicking on this link](https://samto83.github.io/ticket_tracker/)
 
 ![Ticket_Tracker l](https://github.com/SamTo83/ticket_tracker/blob/master/src/assets/ticket-tracker.PNG)
 
